@@ -18,8 +18,32 @@ a {
 button::-moz-focus-inner {
   border: 0;
 }
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  font-family: "Poppins", sans-serif;
+}
+.navbar__link {
+  font-family: "Instrument", serif;
+  font-style: italic;
+  color: #772a2a;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 20px 30px;
+}
+
+.navbar__link > a {
+  color: #1e1e1e;
+}
+.navbar__link > a:hover {
+  color: #772a2a;
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
 /* section-1 */
-.container-1 {
+#container-1 {
   max-width: 1641px;
   max-height: 889px;
   margin: 0 auto;
@@ -428,7 +452,4 @@ button::-moz-focus-inner {
   width: 160px;
   border: 1px solid #f3eae5;
   background: #fff9f5;
-}
-.hr:last-child {
-  display: none;
 }
